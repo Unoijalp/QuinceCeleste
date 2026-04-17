@@ -19,9 +19,9 @@ let divNumReservas ;
 console.log(urlFamilia, urlNumero);
 
 if (urlNumero == "1") {
-    divReserva.innerHTML = "Tenemos reservado para ti <div id='numreserva'></div> lugar."
+    divReserva.innerHTML = "Tenemos reservado para ti <div class='gold-text' id='numreserva'></div> lugar."
 } else {
-    divReserva.innerHTML = "Tenemos reservados para ti <div id='numreserva'></div> lugares."
+    divReserva.innerHTML = "Tenemos reservados para ti <div class='gold-text' id='numreserva'></div> lugares."
 }
 
 
