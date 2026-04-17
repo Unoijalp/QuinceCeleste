@@ -6,8 +6,7 @@
   --color4: #EDC0BB;
   --color5: #FFE4E6;
 
-  --font-lovelyn: "lovelyn";
-  --font-vogue: "vogue";
+  --font-vogue: "vogue", "GFS Didot", serif;
   --font-monsieur: "Monsieur La Doulaise", cursive;
   --font-dubiel: "dubiel";
 

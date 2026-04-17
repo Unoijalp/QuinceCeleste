@@ -5,10 +5,8 @@
   --color4: #EDC0BB;
   --color5: #FFE4E6;
 
-  --font-lovelyn: "lovelyn";
-  --font-vogue: "vogue";
+  --font-vogue: "vogue", "GFS Didot","dubiel", serif;
   --font-monsieur: "Monsieur La Doulaise", cursive;
-  --font-dubiel: "dubiel";
 
 }
 
@@ -41,7 +39,7 @@
   .savedate {
     margin-bottom: 1rem;
     color: var(--color3);
-    font-family: var(--font-dubiel);
+    font-family: var(--font-vogue);
     font-size: 9rem;
     text-align: center;
   }

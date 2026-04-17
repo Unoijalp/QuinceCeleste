@@ -5,8 +5,7 @@
     --color4: #EDC0BB;
     --color5: #FFE4E6;
 
-    --font-lovelyn: "lovelyn";
-    --font-vogue: "vogue";
+    --font-vogue: "vogue", "GFS Didot", serif;
     
 }
 
@@ -34,7 +33,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.3;
     position: absolute;
     top: 0;
     z-index: -1;
