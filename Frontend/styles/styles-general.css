@@ -1,0 +1,66 @@
+:root{
+    --color1: #C08E51;
+    --color2: #C99E7B;
+    --color3: #D0ACA0;
+    --color4: #EDC0BB;
+    --color5: #FFE4E6;
+
+    --font-lovelyn: "lovelyn";
+    --font-vogue: "vogue";
+    
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    overflow-y: scroll;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+
+.texto-dorado {
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Efecto de brillo */
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+}
+
+.boton-dorado {
+  background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  color: #331a00;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  /* Sombra para efecto 3D */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 -2px 5px rgba(255, 255, 255, 0.3);
+  transition: transform 0.2s;
+}
+
+.boton-dorado:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+
+

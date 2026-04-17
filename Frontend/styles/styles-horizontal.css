@@ -1,0 +1,6 @@
+/* Estilos para pantallas de al menos 1024px (escritorio) */
+@media (min-width: 1024px) {
+  body {
+    background-color: lightcoral;
+  }
+}

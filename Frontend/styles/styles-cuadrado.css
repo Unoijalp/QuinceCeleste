@@ -1,0 +1,6 @@
+/* Estilos para pantallas de al menos 768px (tablets/laptops) */
+@media (min-width: 401px) {
+  body {
+    background-color: blue;
+  }
+}
