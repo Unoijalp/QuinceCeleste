@@ -1,6 +1,291 @@
 /* Estilos para pantallas de al menos 1024px (escritorio) */
+:root {
+  --color1: #C08E51;
+  --color2: #C99E7B;
+  --color3: #D0ACA0;
+  --color4: #EDC0BB;
+  --color5: #FFE4E6;
+
+  --font-lovelyn: "lovelyn";
+  --font-vogue: "vogue";
+  --font-monsieur: "Monsieur La Doulaise", cursive;
+  --font-dubiel: "dubiel";
+
+}
+
+
+
 @media (min-width: 1024px) {
   body {
-    background-color: lightcoral;
+    /* background-color: var(--color5); */
+    background-color: black;
+  }
+
+
+
+
+  .section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+
+
+
+    border: #C08E51 solid 1px;
+  }
+
+
+  .savedate {
+    margin-bottom: 1rem;
+    color: var(--color3);
+    font-family: var(--font-dubiel);
+    font-size: 9rem;
+    text-align: center;
+  }
+
+  .nombre {
+    /* font-family: var(--font-lovelyn); */
+    font-family: var(--font-monsieur);
+    font-size: 8rem;
+    margin: auto;
+    padding: 0.5rem;
+    margin-bottom: -4rem;
+    margin-top: -6rem;
+    text-align: center;
+
+    color: var(--color1);
+    text-shadow: 0px 0px 10px white;
+    line-height: 3rem;
+    line-height: 150%;
+  }
+
+  .misxv {
+    font-family: var(--font-vogue);
+    font-size: 2.5rem;
+    /* font-style: italic; */
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    color: var(--color3);
+    /* text-shadow: 1px 1px 5px white; */
+    letter-spacing: 0.7rem;
+
+
+  }
+
+
+  .section1 {}
+
+  .section2 {
+
+    position: relative;
+
+    color: var(--color5);
+    font-family: var(--font-vogue);
+    font-size: 2rem;
+
+
+
+    #reserva {
+      border: 2px solid var(--color5);
+      width: 80%;
+      font-size: 1.3rem;
+      margin: 2rem;
+      text-align: center;
+      align-items: center;
+      padding: 0.5rem;
+
+      #numreserva {
+        margin: 1rem;
+        height: 2rem;
+        align-content: center;
+        font-size: 2.5rem;
+      }
+    }
+
+    .fecha {
+      margin-inline: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      #fecha1 {
+        font-size: 3.5rem;
+        font-family: var(--font-monsieur);
+        margin-bottom: -1rem;
+      }
+
+      #fecha2 {
+        font-size: 2rem;
+      }
+
+    }
+
+    .lugar {
+      margin-inline: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      #lugar1 {
+        font-size: 3.5rem;
+        font-family: var(--font-monsieur);
+        margin-bottom: -1rem;
+      }
+
+      #lugar2 {
+        font-size: 1.8rem;
+      }
+
+      #lugar3 {
+        font-size: 1.5rem;
+      }
+    } 
+  }
+
+  .section3{
+      color: var(--color2);
+    font-family: var(--font-vogue);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .mensaje{
+      width: 85%;
+      margin:auto;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+      .pronto{
+
+      width: 70%;
+      margin:auto;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+
+    .separador{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 90%;
+      max-height: 20vh;
+    }
+  }
+
+
+}
+
+
+
+
+/* Texto con efecto escritura */
+.typing {
+  position: relative;
+  color: #3b2f00;
+  /* contraste con dorado */
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  border-right: 2px solid transparent;
+  /* cursor */
+
+  width: 0;
+  animation: typing 2s steps(30, end) forwards,
+    blink 0.5s step-end 8;
+
+  z-index: 1;
+}
+
+.typing {
+  background: linear-gradient(90deg, #5a4500, #fff2a8, #5a4500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Escritura */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+/* Cursor parpadeante */
+@keyframes blink {
+
+  50% {
+    border-color: #3b2f00;
+  }
+}
+
+
+
+
+
+
+.gold-rain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+  top: 0;
+}
+
+/* Partículas individuales */
+.particle {
+  position: absolute;
+  top: -10px;
+
+  border-radius: 50%;
+  pointer-events: none;
+
+  background: radial-gradient(circle, #fff 0%, #ffd700 60%, transparent 100%);
+
+  opacity: 0;
+  animation: fall linear infinite, sparkle ease-in-out infinite;
+}
+
+/* Caída con leve movimiento lateral */
+@keyframes fall {
+  0% {
+    transform: translateY(-10%) translateX(0);
+  }
+
+  50% {
+    transform: translateY(50vh) translateX(var(--drift));
+  }
+
+  100% {
+    transform: translateY(110vh) translateX(calc(var(--drift) * -1));
+  }
+}
+
+/* Brillo intermitente */
+@keyframes sparkle {
+
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
   }
 }
