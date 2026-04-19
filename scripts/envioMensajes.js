@@ -36,7 +36,7 @@ async function enviarWhatsApp(telefono, link, mensaje){
     let fam = params.get("fam");
     let urlWA = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
     // let mensaje=mensaje+ "\n" + link;
-    urlWA = urlWA + "\n" + link
+    urlWA = urlWA + "\n\n" + link
 
 
 
