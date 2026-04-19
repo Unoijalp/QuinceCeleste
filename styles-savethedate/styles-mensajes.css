@@ -1,0 +1,190 @@
+:root {
+  --color1: #C08E51;
+  --color2: #C99E7B;
+  --color3: #D0ACA0;
+  --color4: #EDC0BB;
+  --color5: #FFE4E6;
+
+  --font-vogue: "vogue", "GFS Didot", serif;
+  --font-monsieur: "Monsieur La Doulaise", cursive;
+
+}
+
+h2{
+    font-family: var(--font-monsieur);
+    font-size: 5rem;
+    color: var(--color5);
+    text-align: center;
+}
+
+p{
+    font-family: var(--font-vogue);
+    color: var(--color5);
+    font-size: 1.6rem;
+    margin-inline: 2rem;
+    text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fondo{
+    position: fixed;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 500px;
+    height: 100vh;
+    position: relative;
+        align-items: center;
+    align-content: center;
+    justify-items: center;
+    /* justify-content: center; */
+    align-self: center;
+
+}
+
+
+#lista{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    
+}
+
+.btn-gold {
+  font-family: var(--font-vogue);
+  font-size: 2rem;
+  letter-spacing: 1px;
+
+  user-select: none;
+
+  padding: 12px 30px;
+  margin-bottom: 1rem;
+
+  color: var(--color5);
+
+  background: none;
+
+
+  border: 2px solid var(--color2);
+  border-radius: 10px;
+
+  cursor: pointer;
+  position: relative;
+
+  text-transform: uppercase;
+
+  /* brillo suave */
+  text-shadow:
+    0 0 5px rgba(255,255,255,0.4),
+    0 0 10px rgba(192,142,81,0.6);
+
+  /* profundidad */
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.4),
+    inset 0 0 8px rgba(255,255,255,0.2);
+
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.btn-gold:hover {
+  background-position: 200% center;
+
+  transform: translateY(-2px) scale(1.04);
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.5),
+    0 0 25px rgba(201,158,123,0.7);
+}
+
+.btn-gold:active {
+  transform: scale(0.96);
+
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.4),
+    inset 0 0 12px rgba(255,255,255,0.4);
+}
+
+
+.btn-gold:hover::after {
+  animation: shine 1s ease;
+}
+
+@keyframes shine {
+  100% {
+    left: 130%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-gold-minimal {
+  font-family: var(--font-vogue);
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  padding: 12px 28px;
+
+  color: var(--color2);
+
+  background: transparent;
+
+  border: 2px solid transparent;
+  border-radius: 10px;
+
+  cursor: pointer;
+  position: relative;
+
+  /* magia del borde degradado */
+  background-image: linear-gradient(#0000, #0000), 
+    linear-gradient(
+      120deg,
+      var(--color1),
+      var(--color2),
+      var(--color5),
+      var(--color2),
+      var(--color1)
+    );  
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  transition: all 0.3s ease;
+}
+
+
+.btn-gold-minimal:hover {
+  color: var(--color5);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 10px rgba(201,158,123,0.4),
+    0 0 20px rgba(192,142,81,0.3);
+}
+
+.btn-gold-minimal:active {
+  transform: scale(0.97);
+}

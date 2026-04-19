@@ -1,4 +1,3 @@
-/* Estilos para pantallas de al menos 768px (tablets/laptops) */
 :root {
   --color1: #C08E51;
   --color2: #C99E7B;
@@ -6,31 +5,25 @@
   --color4: #EDC0BB;
   --color5: #FFE4E6;
 
-  --font-vogue: "vogue", "GFS Didot", serif;
+  --font-vogue: "vogue", "GFS Didot","dubiel", serif;
   --font-monsieur: "Monsieur La Doulaise", cursive;
-  --font-dubiel: "dubiel";
 
 }
 
 
 
-@media (min-width: 441px ) and (max-width: 1023px ) {
 
+/* Estilos para pantallas de menos de 440px (celulares) */
+@media (max-width: 440px) {
   body {
-    /* background-color: var(--color5); */
-    display: flex;
-    flex-direction: column;
     background-color: black;
-
   }
 
   .section {
-    max-width: 768px;
     width: 100%;
     height: 100vh;
     position: relative;
-    align-self: center;
-    justify-self: center;
+
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -45,13 +38,12 @@
   .savedate {
     margin-bottom: 1rem;
     color: var(--color3);
-    font-family: var(--font-dubiel);
+    font-family: var(--font-vogue);
     font-size: 9rem;
     text-align: center;
   }
 
   .nombre {
-    /* font-family: var(--font-lovelyn); */
     font-family: var(--font-monsieur);
     font-size: 8rem;
     margin: auto;
@@ -74,18 +66,12 @@
     padding: 0;
     text-align: center;
     color: var(--color3);
-    /* text-shadow: 1px 1px 5px white; */
     letter-spacing: 0.7rem;
-
-
   }
 
 
-  .section1 {}
 
   .section2 {
-
-    position: relative;
 
     color: var(--color5);
     font-family: var(--font-vogue);
@@ -175,7 +161,6 @@
       margin-bottom: 1rem;
     }
 
-
     .separador{
       display: flex;
       align-items: center;
@@ -183,111 +168,5 @@
       max-width: 90%;
       max-height: 20vh;
     }
-  }
-
-
-}
-
-
-
-
-/* Texto con efecto escritura */
-.typing {
-  position: relative;
-  color: #3b2f00;
-  /* contraste con dorado */
-
-  white-space: nowrap;
-  overflow: hidden;
-
-  border-right: 2px solid transparent;
-  /* cursor */
-
-  width: 0;
-  animation: typing 2s steps(30, end) forwards,
-    blink 0.5s step-end 8;
-
-  z-index: 1;
-}
-
-.typing {
-  background: linear-gradient(90deg, #5a4500, #fff2a8, #5a4500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Escritura */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 80%;
-  }
-}
-
-/* Cursor parpadeante */
-@keyframes blink {
-
-  50% {
-    border-color: #3b2f00;
-  }
-}
-
-
-
-
-
-
-.gold-rain {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 1;
-  top: 0;
-}
-
-/* Partículas individuales */
-.particle {
-  position: absolute;
-  top: -10px;
-
-  border-radius: 50%;
-  pointer-events: none;
-
-  background: radial-gradient(circle, #fff 0%, #ffd700 60%, transparent 100%);
-
-  opacity: 0;
-  animation: fall linear infinite, sparkle ease-in-out infinite;
-}
-
-/* Caída con leve movimiento lateral */
-@keyframes fall {
-  0% {
-    transform: translateY(-10%) translateX(0);
-  }
-
-  50% {
-    transform: translateY(50vh) translateX(var(--drift));
-  }
-
-  100% {
-    transform: translateY(110vh) translateX(calc(var(--drift) * -1));
-  }
-}
-
-/* Brillo intermitente */
-@keyframes sparkle {
-
-  0%,
-  100% {
-    opacity: 0.2;
-  }
-
-  50% {
-    opacity: 1;
   }
 }
