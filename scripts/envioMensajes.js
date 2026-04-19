@@ -39,7 +39,7 @@ async function enviarWhatsApp(telefono, link, mensaje){
     urlWA = urlWA + "\n\n" + link
 
 
-
+console.log(urlWA);
 
     window.open(urlWA, '_blank');
 
