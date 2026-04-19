@@ -43,7 +43,15 @@ async function enviarWhatsApp(telefono, link, mensaje){
 
 console.log("completo es: " + urlWA);
 
+
+console.log("telefono: " + telefono);
     window.open(urlWA, '_blank');
+
+
+    if(telefono===""){
+      telefono="00000";
+    }
+
 
     //Confirmar Envio de Save The Date por whatsapp
     let urlFetch = urlBase + "?codigo=a&respuesta=a&menu=2&telefono="+ telefono;
