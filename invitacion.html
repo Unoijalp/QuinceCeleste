@@ -1,6 +1,5 @@
-        <button onclick="enviarDatos()">Enviar</button>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -46,23 +45,282 @@
     <link rel="stylesheet" href="./styles-invitacion/styles-cuadrado.css">
     <link rel="stylesheet" href="./styles-invitacion/styles-horizontal.css">
     <link rel="stylesheet" href="./styles-invitacion/styles-vertical.css">
+    <link rel="stylesheet" href="./temporizador/temporizador.css">
 
 
     <title>Quince Celeste</title>
 
-
 </head>
 
 <body>
+    <div id="intro" class="intro" onclick="iniciar()">
+        <img class="sobre" src="./Imagenes/sobre.webp" alt="">
+        <div id="familiaIntro"></div>
+        <!-- <img class="flecha" src="./Imagenes/flecha.png" alt="">  -->
+
+    </div>
+
+
     <div class="gold-rain" id="goldRain"></div>
-    <div class="contenedor">
-        <div class="section">
-                <img class="fondo" src="./Imagenes/wall.jpg" alt="">
+    <div id="contenedor" class="contenedor">
+
+
+        <div class="section portada">
+            <img class="foto-v" src="./Imagenes/fotos/1.webp" alt="">
+
+
+            <img class="corona" src="./Imagenes/corona.png" alt="">
+
+            <div class="misxv">
+                MIS XV
+            </div>
+
+
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <div class="number" id="days">00</div>
+                    <div class="label">Días</div>
+                </div>
+
+                <div class="time-box">
+                    <div class="number" id="hours">00</div>
+                    <div class="label">Horas</div>
+                </div>
+
+                <div class="time-box">
+                    <div class="number" id="minutes">00</div>
+                    <div class="label">Minutos</div>
+                </div>
+
+                <!-- <div class="time-box">
+                    <div class="number" id="seconds">00</div>
+                    <div class="label">Segundos</div>
+                </div> -->
+
+            </div>
         </div>
+
+        <div class="section section2">
+            <!-- <img class="fondo" src="./Imagenes/wall.jpg" alt=""> -->
+            <img class="foto-v" src="./Imagenes/fotos/2.webp" alt="">
+
+
+            <div id="familia"> </div>
+            <div id="reserva"></div>
+        </div>
+
+
+        <div class="section section3">
+            <img class="foto-v" src="./Imagenes/fotos/3.webp" alt="">
+
+
+            <div class="fecha">
+                <div id="fecha1">
+                    Fecha
+                </div>
+                <div class="gold-text" id="fecha2">
+                    18 de mayo
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section section4">
+            <img class="foto-v" src="./Imagenes/fotos/4.webp" alt="">
+
+            <div class="lugar">
+                <div class="gold-text" id="lugar1">
+                    Lugar
+                </div>
+                <div id="lugar2">
+                    HACIENDA SAN SEBASTIÁN
+                </div>
+                <div id="lugar3">
+                    Subachoque - El Rosal #Km 3
+                </div>
+            </div>
+
+            <div onclick="abrirMapa()" class="btn glass-gold">
+                VER RUTA
+                <img src="./Imagenes/carro.webp" alt="">
+            </div>
+
+        </div>
+
+        <div class="section section5">
+            <img class="foto-v" src="./Imagenes/fotos/5.webp" alt="">
+
+            <div class="divDresscode">
+
+                <div class="gold-text">
+                    DRESS CODE
+                </div>
+                <div class="divellasellos">
+                    <div class="ellas">
+                        <img src="./Imagenes/vestido3.png" alt="">
+
+                        ELLAS
+                        <br>
+                        VESTIDO LARGO
+
+                    </div>
+                    <div class="ellos">
+                        <img src="./Imagenes/traje.png" alt="">
+                        ELLOS
+                        <br>
+                        TRAJE FORMAL
+                    </div>
+                </div>
+                <div>
+                    Para ella en lo posible no usar color negro
+                    <!-- <div class="divmuestras">
+
+                        <div class="muestra color0"></div>
+
+                    </div> -->
+                </div>
+                <br>
+
+                <div>
+                    nos reservamos los tonos rosa y dorado
+                    <div class="divmuestras">
+
+                        <div class="muestra color1"></div>
+                        <div class="muestra color2"></div>
+                        <div class="muestra color3"></div>
+                        <div class="muestra color4"></div>
+                        <div class="muestra color5"></div>
+                        <div class="muestra color6"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="section section6">
+            <img class="foto-v" src="./Imagenes/fotos/6.webp" alt="">
+
+            <div class="divregalo1">
+
+                <div class="gold-text">
+                    SUGERENCIA DE REGALO
+                </div>
+            </div>
+            <div class="divregalo2">
+
+
+                <div>
+                    TU PRESENCIA ES EL MEJOR REGALO QUE NOS PUEDES DAR EN ESTE DÍA, PERO SI QUIERES TENER
+                    UN DETALLE CON NOSOTROS, TENDRÉMOS
+                </div>
+
+                <div class="divlluviasobres">
+                    LLUVIA DE SOBRES
+                    <img src="./Imagenes/sobrelluvia.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section sectionconfirmacion">
+            <img class="foto-v" src="./Imagenes/fotos/confirma.webp" alt="">
+
+            <div class="divConfirma">
+                <div class="gold-text">Confirma tu asistencia</div>
+
+                <div class="divopciones">
+
+                    <div class="btn glass-gold">
+                        AHÍ ESTARÉ
+                    </div>
+
+                    <div class="btn glass-gold">
+                        NO LOS PODRÉ ACOMPAÑAR
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section section8">
+            <!-- <img class="foto-v" src="./Imagenes/fotos/8.webp" alt=""> -->
+
+            <div class="carousel">
+
+                <div class="carousel-track">
+
+                    <!-- imágenes -->
+
+                    <img src="./Imagenes/fotos/5.webp">
+                    <img src="./Imagenes/fotos/6.webp">
+                    <!-- <img src="./Imagenes/fotos/7.webp"> -->
+                    <img src="./Imagenes/fotos/8.webp">
+                    <img src="./Imagenes/fotos/9.webp">
+                    <img src="./Imagenes/fotos/10.webp">
+                    <img src="./Imagenes/fotos/11.webp">
+                    <img src="./Imagenes/fotos/12.webp">
+                    <img src="./Imagenes/fotos/13.webp">
+                    <img src="./Imagenes/fotos/14.webp">
+                    <img src="./Imagenes/fotos/15.webp">
+                    <img src="./Imagenes/fotos/16.webp">
+                    <img src="./Imagenes/fotos/17.webp">
+                    <img src="./Imagenes/fotos/18.webp">
+                    <img src="./Imagenes/fotos/19.webp">
+                    <img src="./Imagenes/fotos/20.webp">
+                    <img src="./Imagenes/fotos/21.webp">
+                    <img src="./Imagenes/fotos/22.webp">
+                    <img src="./Imagenes/fotos/23.webp">
+
+                    <!-- duplicadas para loop infinito -->
+
+                    <img src="./Imagenes/fotos/5.webp">
+                    <img src="./Imagenes/fotos/6.webp">
+                    <!-- <img src="./Imagenes/fotos/7.webp"> -->
+                    <img src="./Imagenes/fotos/8.webp">
+                    <img src="./Imagenes/fotos/9.webp">
+                    <img src="./Imagenes/fotos/10.webp">
+                    <img src="./Imagenes/fotos/11.webp">
+                    <img src="./Imagenes/fotos/12.webp">
+                    <img src="./Imagenes/fotos/13.webp">
+                    <img src="./Imagenes/fotos/14.webp">
+                    <img src="./Imagenes/fotos/15.webp">
+                    <img src="./Imagenes/fotos/16.webp">
+                    <img src="./Imagenes/fotos/17.webp">
+                    <img src="./Imagenes/fotos/18.webp">
+                    <img src="./Imagenes/fotos/19.webp">
+                    <img src="./Imagenes/fotos/20.webp">
+                    <img src="./Imagenes/fotos/21.webp">
+                    <img src="./Imagenes/fotos/22.webp">
+                    <img src="./Imagenes/fotos/23.webp">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="section sectionfinal">
+            <img class="foto-v" src="./Imagenes/fotos/final.webp" alt="">
+
+            <img class="corona" src="./Imagenes/corona.png" alt="">
+            <div class="agradecimientos">
+                ESTAMOS MUY EMOCIONADOS POR TENER TU COMPAÑÍA
+            </div>
+
+
+
+        </div>
+
     </div>
 </body>
 
-<script src="./scripts/script.js"></script>
-<script src="./scripts/confirmacion.js"></script>
+<script src="./scripts-invitacion/script.js"></script>
+<script src="./scripts-invitacion/confirmacion.js"></script>
+<script src="./temporizador/temporizador.js"></script>
 
 </html>

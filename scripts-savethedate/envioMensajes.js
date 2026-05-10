@@ -49,7 +49,7 @@ console.log("telefono: " + telefono);
 
 
     if(telefono===""){
-      telefono="00000";
+      telefono="100000";
     }
 
 

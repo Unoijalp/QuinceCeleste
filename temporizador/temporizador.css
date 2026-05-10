@@ -1,0 +1,89 @@
+:root {
+    --color1: #C08E51;
+    --color2: #C99E7B;
+    --color3: #D0ACA0;
+    --color4: #EDC0BB;
+    --color5: #FFE4E6;
+    --color0: #000000;
+
+    --font-vogue: "vogue", "GFS Didot", "dubiel", serif;
+    --font-monsieur: "Monsieur La Doulaise", cursive;
+
+}
+
+
+
+
+.countdown {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    font-family: var(--font-vogue);
+}
+
+.time-box {
+    min-width: 100px;
+    padding: 18px 12px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+
+    border: 1px solid transparent;
+
+
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    box-shadow:
+        0 0 12px rgba(201, 158, 123, 0.12);
+}
+
+.number {
+    font-size: 42px;
+    color: var(--color5);
+    font-family: var(--font-vogue);
+
+
+    -webkit-text-stroke: 1px var(--color1);
+
+    text-shadow:
+        0 0 10px rgba(255, 228, 230, 0.3),
+        0 0 20px rgba(192, 142, 81, 0.4);
+}
+
+.label {
+    margin-top: 6px;
+    font-family: var(--font-vogue);
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--color1);
+
+    /* -webkit-text-stroke: 1px var(--color1); */
+
+    text-shadow:
+        0 0 10px rgb(10, 8, 9),
+        0 0 20px rgba(10, 8, 6, 0.655);
+}
+
+@media(max-width:700px) {
+
+    .countdown {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .time-box {
+        min-width: 80px;
+    }
+
+    .number {
+        font-size: 32px;
+    }
+
+}
