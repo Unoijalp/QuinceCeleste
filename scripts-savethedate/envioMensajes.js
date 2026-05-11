@@ -1,9 +1,9 @@
-const urlBase = "https://script.google.com/macros/s/AKfycbwejyVIREB6dFHn4tLQPmUanPqo2upPE3U23yyqn9elBhbsztNLBGqawktd6fdPnHL18w/exec";
+const urlBase = "https://script.google.com/macros/s/AKfycbxFTkcGdn_qPfAPqkhsDIh9he_TDgLdpJjgO5rQKd5XDEaVPn01nvP8TPBDv1g6psQu7Q/exec";
 
 //Traer Lista para enviar Save The Date
 async function cargarDatos() {
 
-    let urlFetch = urlBase + "?codigo=a&respuesta=a&menu=1&telefono=a";
+    let urlFetch = urlBase + "?codigo=a&respuesta=a&menu=3&telefono=a";
     console.log(urlFetch);
   const response = await fetch(urlFetch);
   const data = await response.json();
@@ -54,7 +54,7 @@ console.log("telefono: " + telefono);
 
 
     //Confirmar Envio de Save The Date por whatsapp
-    let urlFetch = urlBase + "?codigo=a&respuesta=a&menu=2&telefono="+ telefono;
+    let urlFetch = urlBase + "?codigo=a&respuesta=a&menu=4&telefono="+ telefono;
       const response = await fetch(urlFetch);
         const data = await response.text();
 
