@@ -532,9 +532,45 @@
         font-size: 1.5rem;
         display: flex;
         flex-direction: row;
+        
+        align-items: center;
+        justify-content: center;
 
         height: 140px;
         margin-top: 2rem;
+
+
+        #confirmando{
+
+          display: none;
+          /* display: flex; */
+          flex-direction: column;
+
+          box-shadow: none;
+          text-align: center;
+
+          align-items: center;
+          justify-content: center;
+          width:80%;
+
+          padding: 1rem;
+        }
+
+        #confirmado{
+
+          display: none;
+          /* display: flex; */
+          flex-direction: column;
+          text-align: center;
+          box-shadow: none;
+          width:80%;
+
+
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+
+        }
 
 
       }
